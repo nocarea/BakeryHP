@@ -1,2 +1,23 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="header">
+  <h1>Vollkornbäckerei Möller</h1>
+  <p>Warschauer Straße 72, 10243 Berlin Friedrichshain</p>
+</div>
+<div class="container">
+  <h3>UNSER ANGEBOT</h3>
+  <div class="backware">
+    <table>
+      <% @backwaren.each do |backware| %>
+          <tr class="backware-item">
+            <td><%= backware.name %></td>
+            <td><%= backware.price %>€</td>
+            <tr id="description">
+              <td id="description-content"><%= backware.description %></td>
+            </tr>
+          </tr>
+      <% end %>
+    </table>
+  </div>
+  <div class="image">
+    <%= image_tag "4-format43.jpg" %>
+  </div>
+</div>

@@ -1,1 +1,88 @@
 // Specific CSS for your home-page
+body {
+  background-image: url("https://images.unsplash.com/photo-1551888761-382cd30b5da6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80");
+  background-size: cover;
+}
+.container {
+  display: flex;
+  width: 80%;
+  height: 600px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.952);
+  border-radius: 4px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  padding-top: 16px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.767);
+  h1 {
+    color: rgb(31, 31, 31);
+    letter-spacing: 1px;
+  }
+  p {
+    color: rgb(22, 22, 22);
+  }
+}
+
+h3 {
+  position: absolute;
+  height: 80px;
+  width: 45%;
+  font-family: $body-font;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+.backware {
+  width: 100%;
+  overflow: scroll;
+  scroll-color: rgba(0, 0, 0, 0);
+  table {
+    width: 100%;
+    margin-top: 72px;
+    margin-right: 12px;
+    tr {
+      border-radius: 2px;
+      transition: all 0.1s ease;
+      td {
+        text-decoration: none;
+        color: rgb(15, 15, 15);
+        font-size: 18px;
+        padding-top: 4px;
+      }
+      &:hover {
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.664);
+        text-shadow: 0 0 4px rgb(167, 150, 0);
+      }
+    }
+  }
+}
+
+#description {
+  display: none;
+}
+
+#description-content {
+  text-align: center !important;
+  color: rgb(192, 189, 0);
+  font-size: 16px !important;
+  cursor: text !important;
+  &:hover {
+    text-shadow: none !important;
+  }
+}
+
+.active {
+  display: inline !important;
+}
+
+.image {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 16px;
+}
